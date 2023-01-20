@@ -1,0 +1,7 @@
+uuid: 5ee6ae51-0e0a-49a6-aa79-eda36c17a490
+langcode: en
+status: true
+dependencies: {  }
+id: composer_lsp
+label: 'Composer LSP'
+git_url: 'https://github.com/nkoporec/composer_lsp'

@@ -1,0 +1,13 @@
+product.product.*:
+  type: config_entity
+  label: 'Product config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    git_url:
+      type: string
+      label: 'Git Url'

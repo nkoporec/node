@@ -1,0 +1,7 @@
+uuid: 6308d32a-a7e1-4e41-960c-fe3d33867e4b
+langcode: en
+status: true
+dependencies: {  }
+id: pmd
+label: PMD
+git_url: 'https://github.com/nkoporec/pmd'

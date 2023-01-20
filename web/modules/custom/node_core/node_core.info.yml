@@ -1,0 +1,9 @@
+name: Node core
+description: Provides core functionalities for Node project.
+package: Node
+type: module
+core_version_requirement: ^9.2 || ^10
+dependencies:
+  - drupal:admin_toolbar
+  - drupal:gin_login
+  - drupal:gin_toolbar
