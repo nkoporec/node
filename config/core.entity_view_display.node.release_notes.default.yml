@@ -1,0 +1,69 @@
+uuid: 048c53fe-6244-4e22-a8b4-7aab15901d27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.release_notes.field_images_galleries
+    - field.field.node.release_notes.field_release_date
+    - field.field.node.release_notes.field_release_type
+    - field.field.node.release_notes.field_text
+    - field.field.node.release_notes.field_version
+    - node.type.release_notes
+  module:
+    - datetime
+    - text
+    - user
+id: node.release_notes.default
+targetEntityType: node
+bundle: release_notes
+mode: default
+content:
+  field_images_galleries:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_release_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_version:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

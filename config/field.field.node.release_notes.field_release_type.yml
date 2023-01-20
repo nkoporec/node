@@ -1,0 +1,29 @@
+uuid: e6ca0720-e920-4324-867c-6faeed4c5f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_type
+    - node.type.release_notes
+    - taxonomy.vocabulary.release_type
+id: node.release_notes.field_release_type
+field_name: field_release_type
+entity_type: node
+bundle: release_notes
+label: 'Release type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      release_type: release_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: release_type
+field_type: entity_reference

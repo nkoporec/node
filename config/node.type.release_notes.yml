@@ -1,0 +1,17 @@
+uuid: da229a96-7c9e-4f91-98fa-ed67b6b1ca34
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Release notes'
+type: release_notes
+description: 'Show release notes.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

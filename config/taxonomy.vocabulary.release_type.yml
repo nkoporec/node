@@ -1,0 +1,8 @@
+uuid: bad85abe-8764-4e83-9909-50f8ad7b4cd7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Release Type'
+vid: release_type
+description: ''
+weight: 0

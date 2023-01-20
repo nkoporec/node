@@ -1,0 +1,11 @@
+uuid: 2a3cfeec-507c-4b69-93f5-ad1bb245c4f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.release_notes
+id: node.release_notes
+target_entity_type_id: node
+target_bundle: release_notes
+default_langcode: site_default
+language_alterable: false

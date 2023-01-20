@@ -1,0 +1,31 @@
+uuid: ff6ff4ef-d99a-40a1-877e-15c4f38231ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.release_notes.field_images_galleries
+    - field.field.node.release_notes.field_release_date
+    - field.field.node.release_notes.field_release_type
+    - field.field.node.release_notes.field_text
+    - field.field.node.release_notes.field_version
+    - node.type.release_notes
+  module:
+    - user
+id: node.release_notes.teaser
+targetEntityType: node
+bundle: release_notes
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_images_galleries: true
+  field_release_date: true
+  field_release_type: true
+  field_text: true
+  field_version: true
+  langcode: true
