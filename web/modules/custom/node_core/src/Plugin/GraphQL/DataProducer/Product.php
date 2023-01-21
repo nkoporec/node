@@ -2,13 +2,11 @@
 
 namespace Drupal\node_core\Plugin\GraphQL\DataProducer;
 
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\graphql\Plugin\GraphQL\DataProducer\DataProducerPluginBase;
 use Drupal\node\NodeInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Gets the ID of product.
+ * Gets field_product.
  *
  * @DataProducer(
  *   id = "related_product_id",
@@ -24,24 +22,13 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   }
  * )
  */
-class Product extends DataProducerPluginBase implements ContainerFactoryPluginInterface {
+class Product extends DataProducerPluginBase {
 
   /**
-   * {@inheritdoc}
-   */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-    return new static(
-      $configuration,
-      $plugin_id,
-      $plugin_definition,
-    );
-  }
-
-  /**
-   * Returns current user id.
+   * Returns a field_product id value.
    *
-   * @return int
-   *   The current user id.
+   * @return int|null
+   *   The product id.
    */
   public function resolve(NodeInterface $node) {
     if ($node->hasField("field_product")) {
