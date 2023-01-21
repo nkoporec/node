@@ -1,7 +1,7 @@
 # Ignore configuration files that may contain sensitive information
 /web/sites/*/*settings*.php
 /web/sites/*/*services*.yml
-# /private
+/private
 
 # Ignore paths that may contain user-generated content
 /web/sites/*/files
