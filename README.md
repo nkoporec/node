@@ -15,4 +15,7 @@ Steps for setting up the project using DDEV:
  - Install DDEV
  - Go to project
  - Run `ddev start`
+ - If running for the first time:
+    - Run `ddev composer install`
+    - Run `ddev drush cim -y`
  - Visit `http://node.ddev.site`
