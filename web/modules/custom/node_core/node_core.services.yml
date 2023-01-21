@@ -1,0 +1,6 @@
+services:
+  node_core_event_subscriber:
+    class: Drupal\node_core\NodeCoreEventSubscriber
+    arguments: ['@current_route_match']
+    tags:
+     - {name: event_subscriber}
