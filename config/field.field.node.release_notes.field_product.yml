@@ -1,0 +1,21 @@
+uuid: 862ae399-3bc2-4a23-8f50-ee60874af605
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product
+    - node.type.release_notes
+id: node.release_notes.field_product
+field_name: field_product
+entity_type: node
+bundle: release_notes
+label: Product
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:product'
+  handler_settings: {  }
+field_type: entity_reference

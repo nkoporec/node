@@ -1,17 +1,24 @@
-uuid: ad4fd1a8-182c-4884-8a38-daa5c5d7d04e
+uuid: 3f9f9205-b74c-4332-ac97-9d94b11e1ca0
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
+    - options
 id: node.field_release_type
 field_name: field_release_type
 entity_type: node
-type: entity_reference
+type: list_string
 settings:
-  target_type: taxonomy_term
-module: core
+  allowed_values:
+    -
+      value: 'Security update'
+      label: 'Security update'
+    -
+      value: 'New feature'
+      label: 'New feature'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

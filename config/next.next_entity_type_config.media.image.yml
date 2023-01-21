@@ -1,0 +1,9 @@
+uuid: 0a130d69-8740-4ff2-b720-a3d99d737205
+langcode: en
+status: true
+dependencies: {  }
+id: media.image
+site_resolver: ''
+configuration: {  }
+revalidator: ''
+revalidator_configuration: {  }

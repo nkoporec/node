@@ -18,6 +18,6 @@ default_value_callback: ''
 settings:
   min: 0
   max: null
-  prefix: v
+  prefix: ''
   suffix: ''
 field_type: integer

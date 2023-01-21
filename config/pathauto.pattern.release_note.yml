@@ -1,0 +1,22 @@
+uuid: 316e7bfc-ca89-4e63-9460-c44f00960487
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: release_note
+label: 'Release note'
+type: 'canonical_entities:node'
+pattern: 'release-note/[node:title]'
+selection_criteria:
+  7525882c-ae61-45cb-9464-bcf4ab7b4513:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7525882c-ae61-45cb-9464-bcf4ab7b4513
+    context_mapping:
+      node: node
+    bundles:
+      release_notes: release_notes
+selection_logic: and
+weight: -5
+relationships: {  }

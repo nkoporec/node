@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.release_notes.field_images_galleries
+    - field.field.node.release_notes.field_image
+    - field.field.node.release_notes.field_product
     - field.field.node.release_notes.field_release_date
     - field.field.node.release_notes.field_release_type
     - field.field.node.release_notes.field_text
@@ -11,6 +12,8 @@ dependencies:
     - node.type.release_notes
   module:
     - datetime
+    - image
+    - options
     - text
     - user
 id: node.release_notes.default
@@ -18,14 +21,24 @@ targetEntityType: node
 bundle: release_notes
 mode: default
 content:
-  field_images_galleries:
-    type: entity_reference_entity_view
+  field_image:
+    type: image
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 104
+    weight: 107
+    region: content
+  field_product:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_release_date:
     type: datetime_default
@@ -37,12 +50,11 @@ content:
     weight: 101
     region: content
   field_release_type:
-    type: entity_reference_label
+    type: list_default
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    weight: 105
+    weight: 108
     region: content
   field_text:
     type: text_default

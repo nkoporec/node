@@ -1,19 +1,19 @@
-uuid: e6fe7c80-80a8-4ced-b33d-b7c2c12a35a9
+uuid: 7955f8fc-fa5e-40a3-a603-61f27c2f8816
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - node
-id: node.field_images_galleries
-field_name: field_images_galleries
+    - node_core
+id: node.field_product
+field_name: field_product
 entity_type: node
 type: entity_reference
 settings:
-  target_type: media
+  target_type: product
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,30 @@
+uuid: 4e851317-facc-4263-ab95-762082737f3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+  module:
+    - comment
+    - config_translation
+    - contextual
+    - filter
+    - graphql
+    - node
+    - subrequests
+id: next
+label: Next
+weight: 4
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access user profiles'
+  - 'edit own comments'
+  - 'execute graphql_compose_server arbitrary graphql requests'
+  - 'execute graphql_compose_server persisted graphql requests'
+  - 'issue subrequests'
+  - 'translate configuration'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view own unpublished content'

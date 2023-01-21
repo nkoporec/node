@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.release_notes.field_images_galleries
+    - field.field.node.release_notes.field_image
+    - field.field.node.release_notes.field_product
     - field.field.node.release_notes.field_release_date
     - field.field.node.release_notes.field_release_type
     - field.field.node.release_notes.field_text
@@ -23,7 +24,8 @@ content:
     weight: 100
     region: content
 hidden:
-  field_images_galleries: true
+  field_image: true
+  field_product: true
   field_release_date: true
   field_release_type: true
   field_text: true

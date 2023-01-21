@@ -1,0 +1,11 @@
+uuid: 306c819d-3481-493a-b79e-8e06961b64d7
+langcode: en
+status: true
+dependencies: {  }
+id: node_front
+label: 'Node front'
+base_url: 'http://localhost:3000'
+preview_url: ''
+preview_secret: ''
+revalidate_url: ''
+revalidate_secret: ''

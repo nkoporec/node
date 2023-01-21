@@ -1,0 +1,14 @@
+uuid: 80b7fced-af36-4b84-bee0-3663f9546b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.next
+  module:
+    - user
+id: user_remove_role_action.next
+label: 'Remove the Next role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: next
