@@ -2,13 +2,13 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: b49a13fb-b972-434d-9d52-539fa3264d5d
-name: 'Drush Site-Install'
+name: 'Node | We make Drupal happen'
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /admin/content
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
