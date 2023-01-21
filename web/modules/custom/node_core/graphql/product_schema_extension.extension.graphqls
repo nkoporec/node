@@ -1,3 +1,13 @@
 extend type NodeReleaseNot {
   product: String!
 }
+
+extend type Query {
+  nodeByProduct (
+    product_id: ID!
+  ): [NodeReleaseNot!]
+
+  nodeByReleaseType (
+    release_type: String!
+  ): [NodeReleaseNot!]
+}

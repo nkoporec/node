@@ -35,6 +35,18 @@ class ProductSchemaExtension extends SchemaExtensionPluginBase {
         ->map('entity', $builder->fromParent()
       )
     );
+
+    $registry->addFieldResolver('Query', 'nodeByProduct',
+      $builder->produce('query_product')
+        ->map('id', $builder->fromArgument("product_id")
+      )
+    );
+
+    $registry->addFieldResolver('Query', 'nodeByReleaseType',
+      $builder->produce('query_release_type')
+        ->map('id', $builder->fromArgument("release_type")
+      )
+    );
   }
 
 }
